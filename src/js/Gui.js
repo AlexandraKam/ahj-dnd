@@ -45,6 +45,7 @@ export default class Gui {
     if (!localStorage.dragNdrops) return;
     const tasksList = JSON.parse(localStorage.dragNdrops);
 
+    // eslint-disable-next-line
     for (const title in tasksList) {
       if (Object.prototype.hasOwnProperty.call(tasksList, title)) {
         this.cols.forEach((col) => {
